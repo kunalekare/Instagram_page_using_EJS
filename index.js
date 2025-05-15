@@ -15,8 +15,19 @@ app.get('/', (req, res) => {
 });
 
 app.get('/ig/:username', (req, res) => {
+  // const follower=["John", "Doe", "Jane", "Smith"];
+  // let { username } = req.params;
   let { username } = req.params;
-  res.render("Instagram.ejs", { username, reels }); // Pass reels to template
+  const instaData=require("./data.json");
+ // console.log(instaData);
+  const data=instaData[username];
+  if (!data) {
+  return res.status(404).send("User not found");
+}
+  console.log(data);
+  res.render("Instagram2.ejs",{data});
+
+  // res.render("Instagram.ejs", { username, reels,follower }); // Pass reels to template
 });
 
 app.post('/reels', (req, res) => {
@@ -31,7 +42,7 @@ app.get('/hello', (req, res) => {
 
 app.get('/rolldice', (req, res) => {
   let diceval = Math.floor(Math.random() * 6) + 1;
-  res.render("rolldice.ejs", { num: diceval });
+  res.render("rolldice.ejs", { diceval});
 });
 
 app.listen(port, () => {
