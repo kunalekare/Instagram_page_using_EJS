@@ -6,3 +6,5 @@ Basic EJS Project..
 
 ![image](https://github.com/user-attachments/assets/9b9c1ab0-a5ef-4795-845e-ee792f385d05)
 ![Screenshot (94)](https://github.com/user-attachments/assets/fcc79ee9-cdbb-4874-ac68-2a9d88adc16c)
+![image](https://github.com/user-attachments/assets/2ceaacc3-51bd-47a9-ac87-7f1be95fe8ae)
+![image](https://github.com/user-attachments/assets/907ab548-fb71-47ef-8b3a-09975fb8488a)
